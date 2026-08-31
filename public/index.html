@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video-Umfrage</title>
+  <meta name="description" content="Umfrage zu Faktoren, die Videos viral machen.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="intro card">
+      <div class="eyebrow">Abschlussprojekt</div>
+      <h1>Was macht ein Video viral?</h1>
+      <p class="lead">
+        Danke, dass du an unserer Umfrage teilnimmst! Schau dir bei jedem Paar beide Videos
+        aufmerksam an und entscheide danach, welches dir eher gefällt bzw. welches du für
+        wahrscheinlicher viral hältst.
+      </p>
+      <p class="note"><strong>Wichtig:</strong> Es gibt keine richtigen oder falschen Antworten.</p>
+    </section>
+
+    <form id="surveyForm" novalidate>
+      <section class="card">
+        <h2>Über dich</h2>
+        <p class="section-subtitle">Diese Angaben helfen uns, die Antworten auszuwerten.</p>
+
+        <div class="fields">
+          <label>
+            <span>Name <b>*</b></span>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="120" placeholder="Dein Name">
+          </label>
+
+          <label>
+            <span>Altersgruppe <b>*</b></span>
+            <select id="ageGroup" name="ageGroup" required>
+              <option value="">Bitte auswählen</option>
+              <option>unter 13</option>
+              <option>13–15</option>
+              <option>16–17</option>
+              <option>18–24</option>
+              <option>25–34</option>
+              <option>35–44</option>
+              <option>45–54</option>
+              <option>55+</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Geschlecht <b>*</b></span>
+            <select id="gender" name="gender" required>
+              <option value="">Bitte auswählen</option>
+              <option>Weiblich</option>
+              <option>Männlich</option>
+              <option>Non-binär / divers</option>
+              <option>Keine Angabe</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <div id="pairs"></div>
+
+      <section class="submit-card card">
+        <div>
+          <h2>Fast geschafft!</h2>
+          <p id="progressText">0 von 10 Videopaaren beantwortet.</p>
+        </div>
+        <button id="submitButton" type="submit">Umfrage absenden</button>
+      </section>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section id="success" class="card success" hidden>
+      <div class="success-icon">✓</div>
+      <h2>Vielen Dank!</h2>
+      <p>Deine Antworten wurden erfolgreich gespeichert.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

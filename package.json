@@ -1,0 +1,15 @@
+{
+  "name": "viral-video-survey",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Umfrage-Webseite für ein Abschlussprojekt über virale Videos.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3",
+    "pg": "^8.16.3"
+  }
+}
