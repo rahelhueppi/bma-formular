@@ -9,6 +9,7 @@ Diese Webanwendung wurde im Rahmen unserer Berufsmaturitätsarbeit (BMA) entwick
 - Export der Ergebnisse als CSV-Datei
 
 ## Technologien
+- **Backend:** Node.js mit Express
 - **Datenbank:** Supabase
 - **Hosting:** Render
 
